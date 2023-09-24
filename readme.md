@@ -1,1 +1,1 @@
-# This is Github Repo for the Web of SSTIA!
+# This is the GitHub repo of UM-SJTU SSTIA!
