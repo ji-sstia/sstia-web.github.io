@@ -5,8 +5,6 @@ menu:
   About: /about.html
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
 theme: phantom
 
 # Logo Image Source
