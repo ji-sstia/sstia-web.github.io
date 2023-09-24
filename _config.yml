@@ -4,7 +4,6 @@ email: ji_sstia@163.com
 description: The Website of UM-SJTU JI SSTIA.
 baseurl: "/sstia-web.github.io" # the subpath of your site, e.g. /blog
 url: "https://ji-sstia.github.io" # the base hostname & protocol for your site
-front-page-posts: 9
 
 # Logo settings
 logo-image-url: images/logo.svg
