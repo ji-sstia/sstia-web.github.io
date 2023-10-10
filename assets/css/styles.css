@@ -899,7 +899,7 @@ input[type='checkbox'] {
 .tabs {
 	padding-top: 3.5rem;
 	padding-bottom: 3rem;
-	background-color: #fca146;
+	background-color: #FFFFFF;
 }
 
 .tabs h2 {
@@ -985,8 +985,8 @@ input[type='checkbox'] {
 
 .tabs .card .card-icon {
 	display: inline-block;
-	width:  15rem;
-	height: 8rem;
+	width:  12rem;
+	height: 6rem;
 	border-radius: 5%;
 	/* background-color: #00c9db; */
 	text-align: center;
@@ -2192,7 +2192,7 @@ a:hover.back-to-top {
 
 
 .darker-background {
-  background-color: #007bff;
+  background-color: #ffffff;
 }
 
 .lighter-background {
