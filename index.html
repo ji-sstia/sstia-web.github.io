@@ -49,7 +49,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <!-- <link href="assets/css/fontawesome-all.css" rel="stylesheet"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="assets/css/swiper.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
@@ -101,9 +100,6 @@
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">TEAM</a>
             </li>
-            <!--<li class="nav-item">
-                <a class="nav-link page-scroll" href="#sponsors">SPONSORS</a>
-            </li>-->
 
         </ul>
         <span class="nav-item social-icons">
@@ -159,41 +155,24 @@
             while ((nextLectureDate < now) && (lectureNumber < numLectures)) {
                 nextLectureDate.setTime(nextLectureDate.getTime() + (7 * 24 * 60 * 60 * 1000));
                 lectureNumber += 1;
-                // alert("lecture: "+lectureNumber+" in "+DeltaDateToString(nextLectureDate-now));
             }
 
-            // alert("done");
             registrationCounter = "<h3><highlight>2023 Edition is HERE!</highlight></h3>";
-            /*
-                    + "<h4>New Lecture Premiere: </h4><h3><highlight>"
-                + DeltaDateToString(nextLectureDate - now)
-                +"</highlight></h3>";
-            */
 
-
-            // var mailingListBtn = '<a class="btn-solid-reg page-scroll" href="http://eepurl.com/gQJo2D"><i class="fas fa-envelope"></i><emsp> JOIN MAILING LIST</a>';
             var lecButton = '<a class="btn-solid-reg" href="https://www.youtube.com/watch?v=7sB052Pz0sQ&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" target="_blank" rel="noopener noreferrer"><h4><i class="fas fa-play"></i><emsp> Watch</h4><h6>lecture videos</h6></a>';
             var subButton = '<a class="btn-solid-reg" href="https://www.youtube.com/channel/UCtslD4DGH6PKyG_1gFAX7sg?sub_confirmation=1" target="_blank" rel="noopener noreferrer"><h4><i class="fas fa-globe-americas"></i><emsp> Subscribe<br>for updates</h4></a>';
-            // document.getElementById("registration").innerHTML = registrationCounter + lecButton + "&emsp;" + subButton;
             document.getElementById("registration").innerHTML = registrationCounter + "&emsp;" + subButton;
-
-
         } else {
-
             if (registrationDistance > 0) {
-
-
                 // Display the result in the element with id="demo"
                 registrationCounter = "<h3>Lottery is now open! Signup today!</h3>"
                     + "<h3><highlight>"
                     + DeltaDateToString(registrationDistance)
                     + "</highlight></h3>";
                 registrationCounter
-
             } else {
                 // If the count down is finished, write some text
                 clearInterval(x);
-                // registrationCounter = "<h3><highlight>Registration is now open to all!!</highlight></h3>";
                 registrationCounter = "<h3>MIT IAP 2022 completed!</h3>"
                 registrationHeader = "<h4>Register and signup here!</h4>";
                 registrationMIT = '<a class="btn-solid-reg page-scroll" href="https://studentformsandpetitions.mit.edu/sfp/student/myForms.htm"><h4><i class="fas fa-graduation-cap"></i><emsp> Current MIT</h4>MIT Students only</a> &nbsp';  // https://studentformsandpetitions.mit.edu/sfp/student/myForms.htm  //https://student.mit.edu/cgi-bin/sfprwtrm.sh
@@ -203,15 +182,8 @@
                 // 	+ '<br><a class="btn-solid-reg page-scroll" href="#schedule"><i class="fas fa-graduation-cap"></i><emsp> SCHEDULE</a> &nbsp';
             }
             // var mailingListBtn = '<a class="btn-solid-reg page-scroll" href="http://eepurl.com/gQJo2D"><i class="fas fa-envelope"></i><emsp> JOIN MAILING LIST</a>';
-            // var mailingListBtn = '<a class="btn-solid-reg page-scroll" href="https://www.youtube.com/channel/UCtslD4DGH6PKyG_1gFAX7sg?sub_confirmation=1"><h4><i class="fas fa-globe-americas"></i><emsp> Subscribe for<br>Updates</h4></a>';
-            var mailingListBtn = '<a class="btn-solid-reg page-scroll" href="http://eepurl.com/gQJo2D"><h4><i class="fas fa-globe-americas"></i><emsp> ONLINE<br>REGISTRATION</h4></a>';
-            var piazzaBtn = '<a class="btn-solid-reg page-scroll" href="https://piazza.com/mit/spring2023/6s191/home"><h4><i class="fas fa-globe-americas"></i><emsp><br>PIAZZA!</h4></a>';
-            //         document.getElementById("registration").innerHTML = registrationCounter + registrationHeader + registrationPublic;
-            // document.getElementById("registration").innerHTML = registrationCounter + mailingListBtn;
             document.getElementById("registration").innerHTML = "<h3>2023 Program has started!</h3>";
-
         }
-
     }, 1000);
 </script>
 
@@ -458,251 +430,6 @@
     </div> <!-- end of container -->
 </div> <!-- end of copyright -->
 <!-- end of copyright -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="daniela_modal" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="custom-modal-header modal-header">
-                <a class="button icon close" data-dismiss="modal">&times;</a>
-            </div>
-            <div class="custom-modal-body modal-body">
-
-                <div class="row">
-                    <div class="col-md-4 v-center">
-                        <div class="card card-lecture card-modal">
-                            <div class="card-icon">
-                                <img src="images/people/danielarus.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 v-center">
-                        <div class="card card-lecture card-modal">
-                            <h4 align="left">Robot Learning</h4>
-                            <h5 align="left">Daniela Rus, Director of MIT CSAIL</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 v-center">
-                        <h6>Talk Abstract</h6>
-                        <p>
-                            coming soon!
-                        </p>
-
-                        <h6>Speaker Bio</h6>
-                        <p>
-                            coming soon!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="themis_modal" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="custom-modal-header modal-header">
-                <a class="button icon close" data-dismiss="modal">&times;</a>
-            </div>
-            <div class="custom-modal-body modal-body">
-
-                <div class="row">
-                    <div class="col-md-4 v-center">
-                        <div class="card card-lecture card-modal">
-                            <div class="card-icon">
-                                <img src="images/people/sadhanalolla.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 v-center">
-                        <div class="card card-lecture card-modal">
-                            <h4 align="left">Robust and Trustworthy Deep Learning</h4>
-                            <h5 align="left">Sadhana Lolla, Machine Learning Scientist, ThemisAI</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 v-center">
-                        <h6>Talk Abstract</h6>
-                        <p>
-                            Artificial intelligence has shown incredible promise in safety-critical domains in the past
-                            few years, but such advances are far from being realized in the real world due to a
-                            fundamental lack of safety and robustness. In addition to being capable of solving a
-                            particular problem, models also must be able to diagnose biases and uncertainty, which may
-                            lead to erroneous or unworthy decisions. Achieving safe and trustworthy AI requires
-                            integrating such safeguards at every stage in the artificial intelligence lifecycle. In this
-                            talk, I'll present Themis AI's new learning-based approaches towards dynamic, resilient, and
-                            robust decision making of deep learning models. We advance robust decision making in the
-                            wild by addressing critical challenges that arise at all stages, stemming from the data used
-                            for training, to the models that learn on this data, to the algorithms to reliably adapt to
-                            unexpected events during deployment.
-                        </p>
-
-                        <h6>Speaker Bio</h6>
-                        <p>
-                            Sadhana Lolla is a machine learning scientist at Themis AI and a third-year undergraduate at
-                            MIT studying computer science. Her research focuses on the application of deep learning to
-                            robotics and designing safe and trustworthy AI. She conducts research at the Distributed
-                            Robotics Laboratory with Prof. Daniela Rus and Dr. Alexander Amini. Previously, she has
-                            worked on accelerating distributed training at the Keras team at Google, as well as on the
-                            Discover Ranking team on recommendation modeling. For her research at MIT, she's been
-                            recognized as a Gerstle Undergraduate Innovation Scholar. </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="vanguard_modal" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="custom-modal-header modal-header">
-                <a class="button icon close" data-dismiss="modal">&times;</a>
-            </div>
-            <div class="custom-modal-body modal-body">
-
-                <div class="row">
-                    <div class="col-md-4 v-center">
-                        <div class="card card-lecture card-modal">
-                            <div class="card-icon">
-                                <img src="images/people/raminhasani.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 v-center">
-                        <div class="card card-lecture card-modal">
-                            <h4 align="left">The Modern Era of Statistics</h4>
-                            <h5 align="left">Ramin Hasani, Principal AI Scientist, Vanguard</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 v-center">
-                        <h6>Talk Abstract</h6>
-                        <p>
-                            We are in the modern era of statistics where overparameterized (very deep and large)
-                            learning systems remarkably improve performance in real-world applications ranging from
-                            language modeling and signal processing, to computer vision. There exists tremendous
-                            empirical evidence for the ability of these increasingly general AI systems in performing
-                            pattern matching, interpolation, few-shot and zero-shot generalization across a wide range
-                            of tasks. In this space, mixed observations have been reported on emerged behaviors of
-                            learning systems, that give rise to fundamental questions such as: is scaling learning
-                            models truly necessary for obtaining intelligent behavior? What is the boundary between
-                            interpolation and extrapolation in representation learning where models generalize to unseen
-                            test data? How to achieve robust decision-making and attain out-of-distribution
-                            generalization? And how does memory interplay with reasoning? In this lecture, I will
-                            provide some insights on these questions, and motivate how our research on liquid neural
-                            networks impact the design of future AI systems in this modern era of statistics.
-                        </p>
-
-                        <h6>Speaker Bio</h6>
-                        <p>
-                            Dr. Ramin Hasani is a Principal AI and Machine Learning Scientist at the Vanguard Group and
-                            a Research Affiliate at MIT CSAIL. Ramin’s research focuses on robust deep learning and
-                            decision-making in complex dynamical systems. Previously he was a Postdoctoral Associate at
-                            MIT CSAIL, leading research on modeling intelligence and sequential decision-making, with
-                            Prof. Daniela Rus. He received his Ph.D. degree with distinction in Computer Science at the
-                            Vienna University of Technology (TU Wien), Austria (May 2020). His Ph.D. dissertation and
-                            continued research on Liquid Neural Networks got recognized internationally with numerous
-                            nominations and awards such as TÜV Austria Dissertation Award nomination in 2020, and HPC
-                            Innovation Excellence Award in 2022. Dr. Hasani has also been a frequent TEDx Speaker.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="google_modal" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="custom-modal-header modal-header">
-                <a class="button icon close" data-dismiss="modal">&times;</a>
-            </div>
-            <div class="custom-modal-body modal-body">
-
-                <div class="row">
-                    <div class="col-md-4 v-center">
-                        <div class="card card-lecture card-modal">
-                            <div class="card-icon">
-                                <img src="images/people/dilipkrishnan.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 v-center">
-                        <div class="card card-lecture card-modal">
-                            <h4 align="left">Muse: Text-To-Image Generation via Masked Generative Transformers</h4>
-                            <h5 align="left">Dilip Krishnan, Research Scientist, Google</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 v-center">
-                        <h6>Talk Abstract</h6>
-                        <p>
-                            I will talk about <a
-                                href="https://twitter.com/dilipkay/status/1610091360203476993?s=46&t=s1jP0yaICe3TgGlygTcznQ">Muse</a>,
-                            a text-to-image Transformer model that achieves state-of-the-art image generation
-                            performance while being significantly more efficient than diffusion or autoregressive
-                            models. This is work done by my team at Google Research. Muse is trained on a masked
-                            modeling task in discrete token space: given the text embedding extracted from a pre-trained
-                            large language model (LLM), Muse is trained to predict randomly masked image tokens.
-                            Compared to pixel-space diffusion models, such as Imagen and DALL-E 2, Muse is significantly
-                            more efficient due to the use of discrete tokens and requiring fewer sampling iterations;
-                            compared to autoregressive models, such as Parti, Muse is more efficient due to the use of
-                            parallel decoding. The use of a pre-trained LLM enables fine-grained language understanding,
-                            translating to high-fidelity image generation and the understanding of visual concepts such
-                            as objects, their spatial relationships, pose, cardinality etc. Our 900M parameter model
-                            achieves a new SOTA on CC3M, with an FID score of 6.06. The Muse 3B parameter model achieves
-                            an FID of 7.88 on zero-shot COCO evaluation, along with a CLIP score of 0.32. Muse also
-                            directly enables a number of image editing applications without the need to fine-tune or
-                            invert the model: inpainting, outpainting, and mask-free editing. More results are available
-                            <a href="http://muse-model.github.io">here</a>.
-                        </p>
-
-                        <h6>Speaker Bio</h6>
-                        <p>
-                            <b>Dilip Krishnan</b> is a Research Scientist at Google’s Cambridge office (Massachusetts).
-                            He currently works on generative models and representation learning. From August 2013 to
-                            November 2014, he was a Postdoctoral Associate with <a
-                                href="http://people.csail.mit.edu/billf/">Bill Freeman</a> at MIT’s CSAIL Lab. In June
-                            2013, he received my PhD from New York University, under the supervision of <a
-                                href="http://www.cs.nyu.edu/~fergus">Rob Fergus</a>. Prior to his PhD, he co-founded a
-                            startup that developed <a href="https://en.wikipedia.org/wiki/DaVinci_Resolve">software</a>
-                            for video editing and visual effects, which has over 2 million users.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
